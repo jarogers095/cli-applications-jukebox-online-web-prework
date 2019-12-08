@@ -20,7 +20,8 @@ end
 def play(songlist)
   puts "Please enter a song name or number:"
   user_input = get_user_input
-  if (Integer(user_input))
+  user_number = Integer(user_input)
+  if (user_number)
     if (Integer(user_input) != 0 && Integer(user_input) <= songlist.length)
       puts "Playing #{songlist[Integer(user_input) - 1]}"
     end
