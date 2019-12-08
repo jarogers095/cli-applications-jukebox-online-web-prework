@@ -57,7 +57,5 @@ def run(songlist)
     else
       puts "Invalid input, please try again"
     end
-    puts "Please enter a command:"
-    user_input = get_user_input
   end
 end
