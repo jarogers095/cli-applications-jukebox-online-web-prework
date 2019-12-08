@@ -25,6 +25,8 @@ def play(songlist)
   if (user_number)
     if (user_number != 0 && user_number <= songlist.length)
       puts "Playing #{songlist[Integer(user_input) - 1]}"
+    else
+      puts "That is not a valid number"
     end
   elsif (songlist.include?(user_input))
     puts "Playing #{songlist.index(user_input)}"
