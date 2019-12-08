@@ -36,10 +36,9 @@ def exit_jukebox
 end
 
 def run(songlist)
-  until (user_input == "exit") do
-    puts "Please enter a command:"
-    user_input = get_user_input
-    
+  puts "Please enter a command:"
+  user_input = get_user_input
+  while (user_input != "exit") do
     case user_input
     when "help"
       help
@@ -52,5 +51,7 @@ def run(songlist)
     else
       puts "Invalid input, please try again"
     end
+    puts "Please enter a command:"
+    user_input = get_user_input
   end
 end
