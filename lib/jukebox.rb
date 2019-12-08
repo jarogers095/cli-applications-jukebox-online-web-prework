@@ -29,7 +29,7 @@ def play(songlist)
       puts "That is not a valid number"
     end
   elsif (songlist.include?(user_input))
-    puts "Playing #{songlist.index(user_input)}"
+    puts "Playing #{songlist[songlist.index(user_input)]}"
   else
     puts "Invalid input, please try again"
   end
