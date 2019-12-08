@@ -14,6 +14,7 @@ end
 def list(songlist)
   songlist.each_with_index do |song, index|
     puts "#{index}. #{song}"
+  end
 end
 
 def play(songlist)
