@@ -20,8 +20,10 @@ end
 def play(songlist)
   puts "Please enter a song name or number:"
   user_input = get_user_input
-  if (user_input)
-    if (Integer(user_input) != 0 && Integer(user_input) <= songlist.length)
+  user_number = Integer(user_input) rescue nil
+  
+  if (user_number)
+    if (user_number != 0 && user_number <= songlist.length)
       puts "Playing #{songlist[Integer(user_input) - 1]}"
     end
   elsif (songlist.include?(user_input))
